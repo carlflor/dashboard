@@ -1,0 +1,72 @@
+@import '../../theme.scss';
+
+$content-width: 450px;
+
+.login-body {
+  background: $app-color;
+}
+
+.login-page {
+  padding: 100px 0;
+
+  > .title, > .login-form {
+    color: white;
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: $content-spacing;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.login-form {
+  border-radius: $border-radius;
+  text-align: left;
+
+  > .field {
+    display: block;
+    margin-bottom: $content-spacing;
+  }
+
+  input, button {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    font-size: .8em;
+  }
+
+  button {
+    background: gray;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+
+  .submit {
+    background: $btn-color;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: $content-spacing;
+    border: 1px solid $btn-color;
+    transition: background .1s;
+
+    &:hover {
+      background: rgba(0,0,0,0);
+      color: $btn-color;
+    }
+  }
+
+  .reset {
+    margin-top: 70px;
+    text-align: center;
+  }
+}
